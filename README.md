@@ -119,6 +119,6 @@ The model is evaluated using:
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 Built as part of a **Machine Learning Case Study** to understand the full pipeline of a classification problem — from raw data to model evaluation.
