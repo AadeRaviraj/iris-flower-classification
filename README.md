@@ -1,40 +1,47 @@
-#  Iris Flower Classification — Decision Tree Case Study
+# Iris Flower Classification — Decision Tree Case Study
 
-A complete end-to-end machine learning project that classifies iris flowers into three species using a **Decision Tree Classifier**. This project follows a structured, step-by-step ML workflow — from loading raw data all the way to evaluating model performance.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange)
+![Algorithm](https://img.shields.io/badge/Algorithm-Decision%20Tree-purple)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
+
+A complete end-to-end machine learning project that classifies iris flowers into three species based on their physical measurements. The project uses a **Decision Tree Classifier** and follows a structured, step-by-step machine learning pipeline — from loading raw data all the way to evaluating model performance.
 
 ---
 
-##  Problem Statement
+## Problem Statement
 
 Given four physical measurements of an iris flower, can a machine learning model correctly identify which species it belongs to?
 
 The three species are:
-- **Setosa**
-- **Versicolor**
-- **Virginica**
+
+- Setosa
+- Versicolor
+- Virginica
 
 ---
 
-##  Project Workflow
+## Project Workflow
 
-This project is broken into **10 clear steps**:
+This project is broken into 10 clear steps:
 
 | Step | Description |
 |------|-------------|
 | 1 | Load the dataset from a CSV file |
-| 2 | Exploratory Data Analysis (EDA) — shape, columns, missing values, class distribution |
+| 2 | Exploratory Data Analysis — shape, columns, missing values, class distribution, statistical summary |
 | 3 | Define Independent (X) and Dependent (Y) variables |
-| 4 | Visualize the data using a scatter plot |
-| 5 | Split data into Training and Testing sets (50/50 split) |
-| 6 | Build the Decision Tree model using Gini criterion |
+| 4 | Visualize the data using a scatter plot (Petal Length vs Petal Width) |
+| 5 | Split data into Training and Testing sets (50% / 50%) |
+| 6 | Build the Decision Tree model using Gini criterion with max depth of 5 |
 | 7 | Train the model on training data |
 | 8 | Run predictions on test data |
-| 9 | Evaluate performance — Accuracy, Confusion Matrix, Classification Report |
-| 10 | Visualize the Confusion Matrix |
+| 9 | Evaluate performance — Accuracy Score, Confusion Matrix, Classification Report |
+| 10 | Visualize the Confusion Matrix using ConfusionMatrixDisplay |
 
 ---
 
-##  Dataset
+## Dataset
 
 **File:** `iris.csv`
 
@@ -51,50 +58,51 @@ This project is broken into **10 clear steps**:
 
 ---
 
-##  Model Details
+## Model Details
 
 | Parameter | Value |
 |-----------|-------|
 | Algorithm | Decision Tree Classifier |
 | Criterion | Gini Impurity |
-| Max Depth | 5 |
+| Max Depth | 2 |
 | Train/Test Split | 80% / 20% |
+| Random State | 42 |
 | Library | scikit-learn |
 
 ---
 
-##  Evaluation Metrics
+## Visualization
+
+**Scatter Plot** — Petal Length vs Petal Width, color-coded by species. This plot clearly shows how naturally separable the three classes are, which makes it a great dataset for understanding classification.
+
+**Confusion Matrix Plot** — A visual heatmap showing where the model predicted correctly and where it made errors, plotted using `ConfusionMatrixDisplay`.
+
+---
+
+## Evaluation Metrics
 
 The model is evaluated using:
--  **Accuracy Score** — overall correctness of predictions
--  **Confusion Matrix** — breakdown of correct vs incorrect predictions per class
--  **Classification Report** — Precision, Recall, and F1-Score per class
--  **Visual Confusion Matrix** — plotted using `ConfusionMatrixDisplay`
+
+- **Accuracy Score** — overall percentage of correct predictions
+- **Confusion Matrix** — breakdown of correct vs incorrect predictions per class
+- **Classification Report** — Precision, Recall, and F1-Score per class
 
 ---
 
-##  Visualization
+## Tech Stack
 
-**Scatter Plot** — Petal Length vs Petal Width, color-coded by species, showing how naturally separable the classes are.
-
-**Confusion Matrix Plot** — Visual heatmap showing where the model predicted correctly and where it made errors.
-
----
-
-##  Tech Stack
-
-- **Python 3**
-- **pandas** — data loading and analysis
-- **matplotlib** — plotting and visualization
-- **seaborn** — (imported for extended visualization support)
-- **scikit-learn** — model building, training, and evaluation
+- Python 3
+- pandas — data loading and analysis
+- matplotlib — scatter plot and confusion matrix visualization
+- seaborn — imported for extended visualization support
+- scikit-learn — model building, training, and evaluation
 
 ---
 
-##  How to Run
+## How to Run
 
 1. Clone this repository
-2. Make sure `iris.csv` is in the same folder as the script
+2. Place `iris.csv` in the same folder as the script
 3. Install the required libraries:
    ```bash
    pip install pandas matplotlib seaborn scikit-learn
@@ -106,7 +114,7 @@ The model is evaluated using:
 
 ---
 
-##  Key Concepts Covered
+## Key Concepts Covered
 
 - Supervised Machine Learning
 - Multi-class Classification
@@ -119,6 +127,8 @@ The model is evaluated using:
 
 ---
 
-##  Author
+## Author
 
-Built as part of a **Machine Learning Case Study** to understand the full pipeline of a classification problem — from raw data to model evaluation.
+**Raviraj Aade**
+
+Built as part of a Machine Learning Case Study series to understand the complete pipeline of a classification problem — from raw data to model evaluation.
